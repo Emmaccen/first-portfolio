@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Emma ! don't forget to add a meta for SEO here ...  -->
+
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
+    <!-- use the icon tag to add a title icon in the browser
+    not sure i need an icon yet .... -->
+    <!-- <link rel="icon" href="./images/1.jpg"> -->
+  </head>
+  <body>
+
+<!-- If you're about to be my emploayer and you're inspecting this code...
+I love you !. but if you're just some nosy-ass developer or person.
+fuck you Bitch / Nigga :)-->
+
+<!-- Be sure to let me know if you find any bugs ;) -->
+
+    <div class="containerFullWidth">
+      <!-- Backgound and Nav Section -->
+      <nav class="navContainer">
+        <div class="homeLink">
+          <a href="./index.html"><h2>Emmanuel</h2></a>
+        </div>
+        <!-- javaScript selector id = nav -->
+        <div id="nav" class="navLinks">
+          <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a onclick="scrollToView('scrollToServices')">Services</a></li>
+            <li><a href="./Portfolio.html">Portfolio</a></li>
+            <li><a onclick="scrollToView('scrollToResume')">Resume</a></li>
+            <li><a onclick="scrollToView('scrollToBlogs')">Blogs</a></li>
+            <li><a onclick="scrollToView('scrollToContact')">Contact</a></li>
+            <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+          </ul>
+        </div>
+        <!-- javaScript display selector id = navIcon -->
+        <span id="navIcon" class="openNav icon-menu2" style="color : green;" onclick="openNav()">
+        </span>
+      </nav>
+
+      <section id="homeBg" class="homeBackground"></section>
+
+<!-- Home Text section -->
+      <div class="introText">
+        <div class="container">
+          <div>
+            <h2 onclick="scrollToView()">Howdy, I'm <strong>Emmanuel Oriola</strong></h2>
+          </div>
+          <div>
+            <p>A Freelance Mobile And Web Developer, Hobbyist, Writer, Sketch Artist And the
+              <big>Co-Founder</big> Of <mark><a href="http://www.echoinc.com">Echo Inc.</a></mark></p>
+          </div>
+          <div>
+            <button class="button" type="button" name="button"><a onclick="scrollToView('scrollToMoreOnMe')">More On Me</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- About Me Section -->
+      <div id="scrollToMoreOnMe" class="aboutMe">
+        <div class="sideImg">
+          <img src="./images/aboutMe.jpg" alt="image">
+        </div>
+        <div class="aboutMeContent">
+          <div class="holder">
+            <div>
+              <span class="liner">_______</span>
+            </div>
+            <div class="aboutMeHeader">
+              <h1>
+                About
+                <strong class="highlight">Me</strong>
+              </h1>
+            </div>
+            <div>
+              <p class="descriptionText">Am a software developer with a thriving passion for thechnology and its use cases in the real world.
+              </p>
+              <p class="descriptionText">I build low and high scale Web and Android Mobile applications. Time and place is no hitch as I work both remote and fixed, delivery is fast and I ensure simultaneous feedbacks with my clients.
+              </p>
+              <span>
+                <button onclick="scrollToView('scrollToContact')" class="smallButton" type="button" name="button">Hire Me</button>
+                <button class="smallButton2" type="button" name="button">Preview Cv</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill section -->
+
+    <div class="container">
+      <div class="mySkills">
+        <div class="col1">
+          <h1>My <span class="highlight">Skills</span></h1>
+        </div>
+        <div class="skillRange">
+          <div>
+            <label for="">Android Dev 82%</label>
+            <progress value="82" max="100"></progress>
+          </div>
+          <div>
+            <label for="">Java 85%</label>
+            <progress value="85" max="100"></progress>
+          </div>
+          <div>
+            <label for="">HTML 98%</label>
+            <progress value="98" max="100"></progress>
+          </div>
+          <div>
+            <label for="">CSS 70%</label>
+            <progress value="70" max="100"></progress>
+          </div>
+          <div>
+            <label for="">JavaScript 65%</label>
+            <progress value="65" max="100"></progress>
+          </div>
+          <div>
+            <label for="">ReactJs 55%</label>
+            <progress value="55" max="100"></progress>
+          </div>
+          <div id="skillViewMore">
+            <button class="button" type="button" name="button"><a href="./about.html">View More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section / product list -->
+
+      <div class="bigHeader">
+        <h1>
+          Latest &
+          <span class="highlight">Greatest</span>
+        </h1>
+      </div>
+
+      <div class="container">
+        <div class="productLists">
+          <div class="productImage">
+            <img src="./images/asideWeb.jpg" alt="echo web">
+          </div>
+          <div class="productDescription">
+            <div>
+              <div>
+                <div>
+                  <span class="liner">_______</span>
+                </div>
+                <h1 class="heading">Echo <span class="highlight">Web Studio</span></h1>
+              </div>
+              <div>
+                <p class="descriptionText">
+                  We are a digital company that provides software development services from anywhere, at any time. Our services includes and not limited to UI-UX designs, Mobile and Web applications, consultancy and are expanding to other areas of services.
+                </p>
+                <div>
+                  <button class="button" type="button" name="button">Visit Site</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="productLists2">
+          <div class="order2 productImage2">
+            <img src="./images/asideMobile.jpg" alt="echo web">
+          </div>
+          <div class="order1 productDescription2">
+            <div>
+              <div>
+                <div>
+                  <span class="liner">_______</span>
+                </div>
+                <h1 class="heading">i<span class="highlight">Note</span></h1>
+              </div>
+              <div>
+                <p class="descriptionText">
+                  iNote is an application developed to offer optimum flexibility at taking notes. It has numerous functionalities amongst which are Cloud Storage, In-App Note Sharing and many more.
+                </p>
+                <div>
+                  <button class="button" type="button" name="button"><a href="#">Download App</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <center>
+        <button class="button" type="button" name="button"><a href="./Portfolio.html">View More</a></button>
+      </center>
+
+      <!-- My Resume Section -->
+
+          <div id="scrollToResume" class="myResumeSectionHeader">
+            <div>
+              <span class="liner">_______</span>
+            </div>
+            <div class="aboutMeHeader">
+                  <h1>
+                    My
+                    <strong class="highlight">Resume</strong>
+                  </h1>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="resume-right-left">
+              <div class="resume-col">
+                <div class="resume-col-heading aboutMeHeader">
+                  <h1>Education</h1>
+                </div>
+                <div class="col-content">
+                  <div class="col-date">
+                    <p>Jan 2020 - PRESENT</p>
+                  </div>
+                  <div class="col-content-heading aboutMeHeader">
+                    <h2>Havard-X Computer Science Degree</h2>
+                  </div>
+                  <div class="descriptionText">
+                    <p>
+                      <strong><a title="Visit Harvar-X" href="">Harvar-X</a></strong> is a reputable online School that patners with
+                      <strong><a title="Visit Edx" href="">Edx</a></strong>, grants Certificatoins and covers a variety of courses.
+                    </p>
+                  </div>
+                  <div>
+                    <p>Havard-X University</p>
+                  </div>
+                </div>
+
+                <div class="col-content">
+                  <div class="col-date">
+                    <p>June 2020 - Completed</p>
+                  </div>
+                  <div class="col-content-heading aboutMeHeader">
+                    <h2>Junior Web Developer</h2>
+                  </div>
+                  <div class="descriptionText">
+                    <p>
+                      <strong><a title="Visit Fcc" href="">FreeCodeCamp</a></strong> is a remote Boot-Camp and majors in software development and current techs.
+                    </p>
+                  </div>
+                  <div>
+                    <p>FreeCodeCamp</p>
+                  </div>
+                </div>
+
+                <div class="col-content">
+                  <div class="col-date">
+                    <p>MARCH 2013 - Completed</p>
+                  </div>
+                  <div class="col-content-heading aboutMeHeader">
+                    <h2>Masterial In Information Technology</h2>
+                  </div>
+                  <div class="descriptionText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                  </div>
+                  <div>
+                    <p>New York University</p>
+                  </div>
+                </div>
+              </div>
+
+                <div class="right">
+                  <div class="resume-col-1">
+                    <div class="resume-col-heading aboutMeHeader">
+                      <h1>Experience</h1>
+                    </div>
+                    <div class="col-content">
+                      <div class="col-date">
+                        <p>MARCH 2013 - PRESENT</p>
+                      </div>
+                      <div class="col-content-heading aboutMeHeader">
+                        <h2>Masterial In Information Technology</h2>
+                      </div>
+                      <div class="descriptionText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                      </div>
+                      <div>
+                        <p>New York University</p>
+                      </div>
+                    </div>
+
+                    <div class="col-content">
+                      <div class="col-date">
+                        <p>MARCH 2013 - PRESENT</p>
+                      </div>
+                      <div class="col-content-heading aboutMeHeader">
+                        <h2>Masterial In Information Technology</h2>
+                      </div>
+                      <div class="descriptionText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                      </div>
+                      <div>
+                        <p>New York University</p>
+                      </div>
+                    </div>
+
+                    <div class="col-content">
+                      <div class="col-date">
+                        <p>MARCH 2013 - PRESENT</p>
+                      </div>
+                      <div class="col-content-heading aboutMeHeader">
+                        <h2>Masterial In Information Technology</h2>
+                      </div>
+                      <div class="descriptionText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                      </div>
+                      <div>
+                        <p>New York University</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="clearFloats"></div>
+
+      <div id="scrollToServices" class="bigHeader">
+        <h1>
+          Techs &
+          <span class="highlight">Services</span>
+        </h1>
+      </div>
+
+      <!-- think it's hard to build a site completely off-external libraries ?
+don't tell me about it :(  .... @#&!?
+      -->
+
+
+    <!-- skill list in card views, or should i say card-like views-->
+
+    <div class="cardViews">
+      <div class="cardHeadings">
+        <div>
+          <h1 class="heading headerUnderline">Web <span class="highlight">Dev</span></h1>
+        </div>
+      </div>
+      <div class="cardLists">
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/bg5.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/html.svg" alt="image">
+                </div>
+                <div class="subtitle">
+                  HTML
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/aboutMe.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/css.svg" alt="image">
+                </div>
+                <div class="subtitle">
+                  CSS
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/bg_3.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  JAVASCRIPT AND JQUERY
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/asideWeb.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  REACTJS
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/bg5.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  PHP
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/echoWeb.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  MYSQL
+                </div>
+              </div>
+          </div>
+        </div>
+
+<!-- first end section -->
+      </div>
+      <!-- second heading -->
+      <div class="cardHeadings">
+        <div>
+          <h1 class="heading headerUnderline">Android <span class="highlight">Dev</span></h1>
+        </div>
+      </div>
+
+      <div class="cardLists">
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/port.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  ANDROID STUDIO
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/post3.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  JAVA AND KOTLIN
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="cardWrapper">
+          <div class="cardItem">
+            <div class="cardImage" style="background-image : url(./images/bg9.jpg)"></div>
+              <div class="cardText">
+                <div class="logoWrapper">
+                  <img src="./images/skillsIcons/iNote.png" alt="image">
+                </div>
+                <div class="subtitle">
+                  FIREBASE AND SQLITE
+                </div>
+              </div>
+          </div>
+        </div>
+<!-- second end section -->
+      </div>
+
+      <!-- Third heading -->
+      <div class="cardHeadings">
+        <div>
+          <h1 class="heading headerUnderline"><span class="highlight">Databases</span></h1>
+        </div>
+      </div>
+
+    <div class="cardLists">
+      <div class="cardWrapper">
+        <div class="cardItem">
+          <div class="cardImage" style="background-image : url(./images/upComing.jpg)"></div>
+            <div class="cardText">
+              <div class="logoWrapper">
+                <img src="./images/skillsIcons/iNote.png" alt="image">
+              </div>
+              <div class="subtitle">
+                MYSQL
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="cardWrapper">
+        <div class="cardItem">
+          <div class="cardImage" style="background-image : url(./images/bg2.jpg)"></div>
+            <div class="cardText">
+              <div class="logoWrapper">
+                <img src="./images/skillsIcons/iNote.png" alt="image">
+              </div>
+              <div class="subtitle">
+                SQLITE
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="cardWrapper">
+        <div class="cardItem">
+          <div class="cardImage" style="background-image : url(./images/bg5.jpg)"></div>
+            <div class="cardText">
+              <div class="logoWrapper">
+                <img src="./images/skillsIcons/iNote.png" alt="image">
+              </div>
+              <div class="subtitle">
+                FIREBASE
+              </div>
+            </div>
+        </div>
+      </div>
+<!-- third end section -->
+    </div>
+
+    <!-- Fourth heading -->
+    <div style="text-align : left" class="cardHeadings">
+      <div>
+        <h1 class="heading headerUnderline">Frame<span class="highlight">Works</span></h1>
+      </div>
+    </div>
+
+  <div class="cardLists">
+
+    <div class="cardWrapper">
+      <div class="cardItem">
+        <div class="cardImage" style="background-image : url(./images/post1.jpg)"></div>
+          <div class="cardText">
+            <div class="logoWrapper">
+              <img src="./images/skillsIcons/iNote.png" alt="image">
+            </div>
+            <div class="subtitle">
+              ANDROID STUDIO
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="cardWrapper">
+      <div class="cardItem">
+        <div class="cardImage" style="background-image : url(./images/project-6.jpg)"></div>
+          <div class="cardText">
+            <div class="logoWrapper">
+              <img src="./images/skillsIcons/iNote.png" alt="image">
+            </div>
+            <div class="subtitle">
+              JQUERY
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="cardWrapper">
+      <div class="cardItem">
+        <div class="cardImage" style="background-image : url(./images/bg5.jpg)"></div>
+          <div class="cardText">
+            <div class="logoWrapper">
+              <img src="./images/skillsIcons/iNote.png" alt="image">
+            </div>
+            <div class="subtitle">
+              BOOTSTRAP
+            </div>
+          </div>
+      </div>
+    </div>
+<!-- Fourth end section -->
+  </div>
+
+
+
+      <!-- blog section begins here  -->
+
+      <div id="scrollToBlogs" class="blogSection">
+        <div>
+          <div>
+            <span class="liner">_______</span>
+          </div>
+          <div class="aboutMeHeader">
+                <h1>
+                  My
+                  <strong class="highlight">Blogs</strong>
+                </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="blogContainer container">
+        <div class="blogContentWrapper">
+          <div class="blogContentHolder">
+            <div class="blogImage">
+              <img src="./images/post1.jpg" alt="blog post">
+            </div>
+            <div>
+              <h3>
+                <a class="blogHeader" href="#">Stalagmite And Sand Stones On Ancor Ridge</a>
+              </h3>
+            </div>
+            <div>
+              <p class="descriptionText">
+                Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+              </p>
+            </div>
+          </div>
+
+          <div class="blogContentHolder">
+            <div class="blogImage">
+              <img src="./images/post2.jpg" alt="blog post">
+            </div>
+            <div>
+              <h3>
+                <a class="blogHeader" href="#">Creative Product Designer From Facebook</a>
+              </h3>
+            </div>
+            <div>
+              <p class="descriptionText">
+                Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+              </p>
+            </div>
+          </div>
+
+          <div class="blogContentHolder">
+            <div class="blogImage">
+              <img src="./images/post3.jpg" alt="blog post">
+            </div>
+            <div>
+              <h3>
+                <a class="blogHeader" href="#">Getting Your Game Up As A Junior Developer</a>
+              </h3>
+            </div>
+            <div>
+              <p class="descriptionText">
+                Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+              </p>
+            </div>
+          </div>
+        </div>
+        <center>
+          <button class="button" type="button" name="button">More Blogs</button>
+        </center>
+<!-- Blog Section Ends here...  -->
+      </div>
+
+  <!-- contact section -->
+
+  <div id="scrollToContact" style="background-image: url(./images/contactBg.jpg);" class="formWrapper">
+    <div class="left">
+      <div>
+        <h1>Get In Touch</h1>
+      </div>
+      <div>
+        <p class="footerTexts">
+          Wanna work with me? You can reach me via the links provided below. For more detailed and on-point info, in the case where my phone line is unreachable, you can kindly fill in the form below with a description of the services you need. All my social links are active, I get in-touch via them too. Thanks.
+         </p>
+      </div>
+      <div>
+        <ul class="getInTouchList">
+          <!-- Chai !... sometimes inline styles will save your life :)     -->
+          <li>
+            <h4>Phone: <a style="color : inherit;" href="tel:07030680817">+234-703-068-0817</a></h4>
+          </li>
+          <li>
+            <h4>Email: <a style="color : inherit;" href="mailto:Oriolaemmanuel199@gmail.com">info@mymail.com</a></h4>
+          </li>
+          <li>
+            <h4>Website: <a style="color : inherit;" href="#">www.mywebsite.com</a></h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="messageForm">
+      <div class="nameAndEmailForm">
+        <div>
+          <h1>Write Me</h1>
+        </div>
+        <div><input type="text" name="text" placeholder="Your Name"></div>
+        <div><input type="email" name="text" placeholder="Your E-Mail"></div>
+      </div>
+      <div class="message-subject-form">
+        <div>
+          <input type="text" name="subject" value="" placeholder="Subject">
+        </div>
+        <div>
+          <textarea name="message" rows="8" cols="80" placeholder="Your Message..."></textarea>
+        </div>
+        <div>
+          <button class="button" type="button" name="button">SEND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer Section -->
+
+        <footer>
+          <div class="footerContentHolder">
+            <div class="footerContent">
+              <div class="footerHeader">
+                <h4>About</h4>
+              </div>
+              <div>
+                <p>
+                  <span class="footerTexts">
+                    Am A Freelance Mobile And Web Developer, Hobbyist, Writer, Sketch Artist And the
+              <big>Co-Founder</big> Of
+                  </span>
+                  <mark><a href="http://www.echoinc.com">Echo Inc.</a></mark>
+                </p>
+              </div>
+<!-- col-1 ends-->
+            </div>
+
+            <!-- col-2 starts  -->
+            <div class="footerContent">
+              <div class="footerHeader">
+                <h4>Media Links</h4>
+              </div>
+              <div>
+                <ul>
+                  <li class="footerSocialLinks">
+                      <a class="linkTexts" title="StackOverflow" href="#"><span class="icon-stackoverflow"></span>StackOverflow</a>
+                  </li>
+                  <li class="footerSocialLinks">
+                      <a class="linkTexts" title="Mail Me"
+                       href="#"><span class="icon-mail"></span>Mail</a>
+                  </li>
+                  <li class="footerSocialLinks">
+                      <a class="linkTexts" title="Instagram" href="#"><span class="icon-instagram2"></span>Instagram</a>
+                  </li>
+                  <li class="footerSocialLinks">
+                      <a class="linkTexts" title="LinkedIn" href="#"><span class="icon-linkedin"></span>LinkedIn</a>
+                  </li>
+                  <li class="footerSocialLinks">
+                      <a class="linkTexts" title="GitHub" href="#"><span class="icon-github2"></span>GitHub</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- col-3 starts -->
+            <div class="footerContent">
+              <div class="footerHeader">
+                <h4>Quick Links</h4>
+              </div>
+              <div>
+                <ul>
+                  <li><a class="footerTexts" href="./Portfolio.html">Portfolio</a></li>
+                  <li><a class="footerTexts" onclick="scrollToView('scrollToBlogs')">Blogs</a></li>
+                  <li><a class="footerTexts" onclick="scrollToView('scrollToServices')">Services</a></li>
+                  <li><a class="footerTexts" onclick="scrollToView('scrollToContact')">Contact</a></li>
+                </ul>
+              </div>
+<!-- col-3 ends-->
+            </div>
+
+<!-- col-4 starts -->
+            <div class="footerContent">
+              <div class="footerHeader">
+                <h4>Have A Question ?</h4>
+              </div>
+              <div>
+                <div class="connect">
+                  <ul>
+                    <li>
+                      <a title="Mail Me" href="mailto:Oriolaemmanuel199@gmail.com"><span class="icon-mail"></span></a>
+                      <span class="footerTexts">Eamma@gmail.com</span>
+                    </li>
+                    <li>
+                      <a title="Call Me" href="tel:07030680817"><span class="icon-phone"></span></a>
+                      <span class="footerTexts">+234-703-068-0817</span>
+                   </li>
+                  </ul>
+                </div>
+              </div>
+<!-- col-4 ends-->
+            </div>
+
+          </div>
+          <center class="Copyright descriptionText">Copyright &copy;
+            <script type="text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+            | All Rights Reserved.
+          </center>
+        </footer>
+
+<!-- IF YOU'RE EVIL AND THINK THIS SITE AIN'T THAT COOL :(
+Be sure to let me know... HIT ME UP ON IG : @caveOfProgramming.
+if i haven't already changed the name to CodePlanet
+ -->
+
+<!-- javaScrip code below -->
+
+        <script src="./javaScript/porto.js" charset="utf-8"></script>
+
+        <!-- Do you ever think javaScript if one of the most powerful pro-lang in the world and still Fucking Hate it ?
+        YEAH !!! ......  i've seen that face before :(      -->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.8.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.8.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+  </body>
+</html>

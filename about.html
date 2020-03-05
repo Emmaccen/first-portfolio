@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aboutPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Me</title>
+  </head>
+  <body>
+    <div class="fullWidth" style="background-image : url('./images/aboutMeBg.jpg')">
+      <nav class="navContainer">
+        <div class="homeLink">
+          <a href="./index.html"><h2>Emmanuel</h2></a>
+        </div>
+        <div id="nav" class="navLinks">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a class="active" href="./about.html">About</a></li>
+            <li><a href="./index.html#scrollToServices">Services</a></li>
+            <li><a href="./Portfolio.html">Portfolio</a></li>
+            <li><a href="./index.html#scrollToResume">Resume</a></li>
+            <li><a href="./index.html#scrollToBlogs">Blogs</a></li>
+            <li><a href="./index.html#scrollToContact">Contact</a></li>
+            <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+          </ul>
+        </div>
+        <!-- javaScript display selector id = navIcon -->
+        <span id="navIcon" class="openNav icon-menu2" style="color : green;" onclick="openNav()"></span>
+      </nav>
+
+          <div class="container introText floatLeft">
+            <div>
+              <div>
+                <h2>Howdy, I'm <strong class="">Emmanuel Oriola</strong></h2>
+              </div>
+              <div>
+                <p>A Freelance Mobile And Web Developer, Hobbyist, Writer, Sketch Artist And the
+                  <big>Co-Founder</big> Of <mark><a href="#">Echo Inc.</a></mark></p>
+              </div>
+            </div>
+          </div>
+<!-- Am so loving the look of this links right now .... -->
+        <div class="aboutSocialLinks floatRight">
+          <ul>
+            <li>
+              <a title="StackOverflow" href="#"><span class="icon-stackoverflow"></span></a>
+            </li>
+            <li>
+              <a title="Email" href="mailto:oriolaemmanuel199@gmail.com"><span class="icon-mail"></span></a>
+            </li>
+            <li>
+              <a title="Instagram" href="#"><span class="icon-instagram2"></span></a>
+            </li>
+            <li>
+              <a title="LinkedIn" href="#"><span class="icon-linkedin"></span></a>
+            </li>
+            <li>
+              <a title="GitHub" href="#"><span class="icon-github2"></span></a>
+            </li>
+          </ul>
+        </div>
+<!-- Clear the floats .... if you know, you know ... BIG-GRIN :) -->
+        <div class="clearFloats"></div>
+
+        <div class="container">
+          <div class="skillHeader">
+            <div>
+              <span class="liner">_______</span>
+            </div>
+            <div class="aboutMeHeader">
+              <h1>
+                My
+                <strong>Skills</strong>
+              </h1>
+            </div>
+          </div>
+        </div>
+
+          <div class="container">
+            <div class="mySkills">
+              <div class="skillRange">
+                <!-- Wow... i've got a whole lot of skill ...... damn bro
+                ain't i a fucking genius ? -->
+                <div>
+                  <label for="">Android Dev 82%</label>
+                  <progress value="82" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">Java 85%</label>
+                  <progress value="85" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">HTML 98%</label>
+                  <progress value="98" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">CSS 70%</label>
+                  <progress value="70" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">JavaScript 65%</label>
+                  <progress value="65" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">ReactJs 55%</label>
+                  <progress value="55" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">JQuery 35%</label>
+                  <progress value="35" max="100"></progress>
+                </div>
+              </div>
+              <div class="skillRange">
+                <div>
+                  <label for="">Kotlin 42%</label>
+                  <progress value="42" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">Android Studio 69%</label>
+                  <progress value="69" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">Php 18%</label>
+                  <progress value="18" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">Firebase Database 63%</label>
+                  <progress value="63" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">SQlite 30%</label>
+                  <progress value="30" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">MySqlite 30%</label>
+                  <progress value="30" max="100"></progress>
+                </div>
+                <div>
+                  <label for="">UI-UX 68%</label>
+                  <progress value="68" max="100"></progress>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- Some Extra details -->
+
+         <div class="container">
+           <div class="bioSection">
+             <div>
+               <img src="images/aboutMe.jpg">
+             </div>
+             <div>
+               <section>
+                 <div>
+                  <span class="liner">_______</span>
+                </div>
+                <div class="aboutMeHeader">
+                  <h1>
+                Short
+                <strong class="highlight">Bio</strong>
+                  </h1>
+                </div>
+               </section>
+               <div >
+               <div class="descriptionText">
+                 <p >
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 </p>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- new and upcoming projects -->
+
+         <div>
+            <span class="liner">_______</span>
+              </div>
+                <div class="aboutMeHeader">
+                  <h1>
+                New &
+                    <strong class="highlight">Upcoming Projects</strong>
+                 </h1>
+         </div>
+
+         <!-- upcoming projects -->
+
+         <div class="container">
+           <div class="aboutSectionProjects">
+            <div class="upcomingProjects">
+             <div class="upcomingProjectImg">
+               <img src="./images/upcoming.jpg">
+             </div>
+             <div class="upcomingProjectDesc">
+               <div><h3>Hotel Hourly</h3></div>
+               <div>
+                <p class="descriptionText">
+                  Hotel Bookings per hourly rates. Some other weird texts that
+                  describes the product
+                </p>
+             </div>
+             </div>
+           </div>
+
+           <div class="upcomingProjects">
+             <div class="upcomingProjectImg">
+               <img src="./images/upcoming.jpg">
+             </div>
+             <div class="upcomingProjectDesc">
+               <div><h3>Hotel Hourly</h3></div>
+               <div>
+                <p class="descriptionText">
+                  Hotel Bookings per hourly rates. Some other weird texts that
+                  describes the product
+                </p>
+             </div>
+             </div>
+           </div>
+
+           <div class="upcomingProjects">
+             <div class="upcomingProjectImg">
+               <img src="./images/upcoming.jpg">
+             </div>
+             <div class="upcomingProjectDesc">
+               <div><h3>Hotel Hourly</h3></div>
+               <div>
+                <p class="descriptionText">
+                  Hotel Bookings per hourly rates. Some other weird texts that
+                  describes the product
+                </p>
+             </div>
+             </div>
+           </div>
+           </div>
+         </div>
+
+<!-- Some lazy javaScript code -->
+    <script src="./JavaScript/porto.js" charset="utf-8"></script>
+  </body>
+</html>

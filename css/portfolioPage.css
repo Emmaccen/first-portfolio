@@ -1,0 +1,152 @@
+/*styles for the portfolio section page*/
+
+/*we're setting static positioning to override the master style
+since we're using a background image and not positioning it
+absolute like the homePage*/
+
+.portfolioPageBg {
+	position: relative;
+ 	background-image: url("../images/bg5.jpg");
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	height: 400px;
+ 	width: 100%;
+ 	/*can't use filter here.... like i said... its a background image....*/
+ 	/*filter: brightness(70%);*/
+}
+
+.portfolioPageBg .portfolioTag {
+	position: absolute;
+	left : 50px;
+	bottom: 20px;
+	color : white;
+	font-size: 20px;
+}
+
+.portfolioTag a:hover {
+  transition: 0.3s;
+  border-bottom : 2px solid #57d131;
+}
+.tabTitles {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.tabTitles div button {
+	font-size: 18px;
+	font-family: monospace;
+	outline: none;
+	border : none;
+	background: transparent;
+	margin: 10px;
+	cursor: pointer;
+}
+.currentTab {
+	border-bottom: 2px solid #57d131 !important;
+}
+.tabTitles div{
+	text-align: center;
+}
+.tabTitles button:hover {
+	transition: 0.2s;
+ border-bottom: 2px solid #57d131 !important;
+}
+
+/*Emma....... this Portfolio page style is pretty self explanatory so
+skill the comments and style this shit !!! */
+
+
+.portfolioItemsWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.portfolioItemWrapper {
+	margin : 20px;
+	transition: .5s all ease;
+}
+.cover{
+	position: relative;
+	overflow: hidden;
+}
+.backgroundImage {
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+.overlay {
+font-family: monospace;
+transition: 1s;
+position: absolute;
+color : white;
+ top : 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center; /*left to right*/
+ align-items: center; /*top to buttom*/
+ height: 100%;
+ text-align: center;
+ /*should have use width 100% all this while ...*/
+ /*padding : 0px 10px 0px 100px;*/
+ width: 100%;
+}
+.overlay {
+	display: none;
+}
+.cover:hover .overlay{
+	display: flex;
+}
+.backgroundImage {
+	transition: 1s all ease;
+}
+.cover:hover .backgroundImage {
+	filter: brightness(30%);
+	/* transition: 1s; */
+	transform: scale(1.1);
+}
+.animate {
+	animation: transform 1s;
+	/*animation-iteration-count: infinite;
+	animation-direction: alternate;*/
+}
+@keyframes transform {
+	from {transform: scale(0.5);}
+	to {transform: scale(1);}
+}
+
+.green {
+	color : #57d131;
+}
+
+.topHeader a {
+	color : #333;
+}
+.topHeader h2:hover {
+	color : #5d8358;
+	transition : 1s all ease;
+}
+
+@media (max-width: 900px){
+
+.portfolioItemsWrapper {
+	grid-template-columns: 1fr;
+}
+
+.backgroundImage {
+	filter: brightness(60%);
+	transition: 1s;
+}
+.cover .overlay{
+	display: flex;
+}
+.green {
+	color : #fff;
+}
+
+
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/portfolioPage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+</head>
+<body>
+	<div class="portfolioPageBg">
+		<nav class="navContainer">
+	       <div class="homeLink">
+	         <a href="./index.html"><h2>Emmanuel</h2></a>
+	       </div>
+        <!-- javaScript selector id = nav -->
+        <div id="nav" class="navLinks">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#scrollToServices">Services</a></li>
+            <li><a class="active" href="./Portfolio.html">Portfolio</a></li>
+            <li><a href="./index.html#scrollToResume">Resume</a></li>
+            <li><a href="./index.html#scrollToBlogs">Blogs</a></li>
+            <li><a href="./index.html#scrollToContact">Contact</a></li>
+            <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+          </ul>
+        </div>
+        <!-- javaScript display selector id = navIcon -->
+        <span id="navIcon" class="openNav icon-menu" style="color : green;" onclick="openNav()">
+        </span>
+      </nav>
+
+      <!-- Portfolio Section -->
+
+
+      <div class="portfolioTag">
+      	<div>
+      		<h1 class="header">Portfolio</h1>
+      	</div>
+      	<div>
+      		<span style="margin-right: 5px;" class="icon-home"></span>
+      		<a style="margin-right: 10px;" href="./index.html">Home</a>&dash;
+      		<span style="margin: 10px;"  class="active" href="#">Portfolio</span>
+      	</div>
+      </div>
+	</div>
+
+	<div class="tabTitles">
+		<div>
+			<button class="currentTab" type="button" name="button">All</button>
+			<button type="button" name="button">Web</button>
+			<button type="button" name="button">Mobile</button>
+			<button type="button" name="button">Futured</button>
+			<button type="button" name="button">Others</button>
+		</div>
+	</div>
+
+<!-- Portfolio displays -->
+
+	<div class="container">
+		<div class="portfolioItemsWrapper">
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./port.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>Web</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./bg9.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>Mobile</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./bg_3.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>Mobile</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./asideWeb.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>UI / UX</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./aboutMe.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>UI / UX</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolioItemWrapper">
+				<div class="cover animate">
+					<div class="backgroundImage" style="background-image: url('./images./project-2.jpg');"></div>
+					<div class="overlay">
+						<div class=""><h1>iNote Android Mobile</h1></div>
+						<div class="green"><p>UI / UX</p></div>
+					</div>
+				</div>
+				<div class="portfolioDescriptions">
+					<div class="topHeader">
+						<a href=""><h2>Creative Application For Users</h2></a>
+					</div>
+					<div class="descriptionText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- JavaScript  -->
+
+	<script src="./JavaScript/porto.js" charset="utf-8"></script>
+
+</body>
+</html>

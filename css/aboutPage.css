@@ -1,0 +1,177 @@
+ 
+
+ /*NOTE : This file is meant to override styles from the master
+stylesheet */
+
+
+/*I kept wondering why i had to create a separate about page !
+the plan was to make a single page website.
+i guess am more than just two paragraphs,
+...........lets find out !*/
+
+
+/* about me section */
+/* About Me Page styles */
+.navContainer {
+  padding : 10px 20px 10px 10px;
+  position : static;
+}
+.fullWidth {
+  color : white;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /*using the brightness style makes the content above it dark too
+  unless its positioned over it.... don't be stupid emma... be smart*/
+  /*filter: brightness(70%);*/
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float : right;
+}
+.introText strong {
+  display: block;
+}
+.introText {
+  position: static;
+  width: 65%;
+  font-size: 150%;
+  text-align: left;
+  word-wrap: break-word;
+  padding-bottom: 5px;
+  margin-left: 50px;
+}
+.introText div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.skillHeader {
+  width: 100%;
+  text-align: center;
+}
+.mySkills  {
+  margin : 0px;
+  padding : 20px;
+}
+.skillRange {
+  width: 35%;
+  margin : auto;
+  padding : 10px;
+}
+
+.bioSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px 10px 50px 10px;
+  grid-gap: 40px;
+}
+.paragraph {
+  color : #333;
+}
+.bioSection img {
+  height: auto;
+  width: 100%;
+}
+.aboutSectionProjects img {
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.aboutSectionProjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+
+@media (max-width: 1120px) {
+  /*I've removed the padding top of the sideNav bar for the about page
+  because adding it makes the height of the nav bar longer than the page itself.
+  silly nav.... 
+  */
+.navContainer .sideNav {
+  padding-top: 0px;
+}
+.mySkills  {
+  margin : 0px;
+  padding : 10px;
+}
+/*To make it up to the sideBar i've re-added the lost padding to the 
+first child of the list...
+cool right? :) I know... am smart like that, haha :) evil laugh*/
+.sideNav ul:first-child {
+  padding-top : 50px;
+}
+
+/*okay now lets make sure the content shows well on mobiles
+SHIT !!! :(    i fucking hate this part of web-dev
+can't every-fucking-body browse on their fucking PC ?*/
+
+.mySkills {
+  display: flex;
+}
+.skillRange {
+  width: 90%;
+  margin : auto;
+  padding : 10px;
+}
+/*short bio section */
+.bioSection {
+  display: block;
+}
+/*upcoming Projects*/
+.aboutSectionProjects {
+  display: block;
+}
+/*Okay i guess we're done here*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IF You're inspecting my code right now? WELL...... FUCK YOU !!! */
+
+/*Sometimes i wonder how i would wanna mannage some ugly code someone else wrote,
+i mean, i could already see the hassle it'll be if i've written
+this code in a bad way and after some years i wanna modify
+some of the code i've written.... i'd deffinately hang me-self if that happens :(  
+*/
+
+
+
+
+
