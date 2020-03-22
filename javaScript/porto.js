@@ -7,7 +7,7 @@
 
 function respondToScreenSize () {
   if(innerWidth <= 1100) {
-/*Remove any initial class of the element as we never want to have both 
+/*Remove any initial class of the element as we never want to have both
 the phoneSize Navigation style and the Desktop style navigation style
 at the same time*/
   screenSize.classList = "";
@@ -63,9 +63,6 @@ function closeNav() {
   //document.body.style.backgroundColor = "white";
 }
 
-// window.addEventListener("mouseover", () => {
-//   console.log('over');
-// });
 console.log(window);
 console.log(innerWidth);
 
@@ -85,20 +82,10 @@ console.log(innerWidth);
             // change the wallpaper every 7 seconds
             setTimeout(changeBackground,7000);
           }
-          changeBackground();
 
-/*This is the part where i do some really cool javascript*/
-
-// checking if an element is visible on the viewport
-
-// const item = document.querySelector('.portfolioItemWrapper');
-
-// var elementObserver = new IntersectionObserver(function(element) {
-//   if(element[0].isIntersecting === true)
-//     console.log('Element is fully visible in screen');
-// }, { threshold: [1] });
-
-// elementObserver.observe(item);
+window.onload = () => {
+    changeBackground();
+}
 
 
 /*Smooth scroll to a view when a nav link is selected and is on that same page*/
