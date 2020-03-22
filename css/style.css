@@ -1,15 +1,8 @@
 /*Don't fucking inspect ma code :(  */
 
-/*It's kinda funny tho, cuz this site took me roughly 8-days to create
-and it ain't even that cool, Or .... is it? (  .....)
-*/
-
-/*No lies tho, i want through some really shitty hard time getting it all to work
-, i mean, little rest at all... i did it all completely offline.
-had no fucking internet for 2-shitty-fucking-ugly-meserable-weeks. :(       */
 
 /*font family*/
-@font-face {
+@font-face{
   font-family: "BickhamScriptPro-Regular";
   src: url("../fonts/BickhamScriptPro-Regular.woff") format("woff"),
   url("../fonts/BickhamScriptPro-Regular.woff2") format("woff2");
@@ -22,42 +15,52 @@ had no fucking internet for 2-shitty-fucking-ugly-meserable-weeks. :(       */
     url('fonts/icomoon.ttf?1z9v6x') format('truetype'),
     url('fonts/icomoon.woff?1z9v6x') format('woff'),
     url('fonts/icomoon.svg?1z9v6x#icomoon') format('svg');
-
 }
 
 /* Global Styles */
 body {
   /*font-family: "montserat" "icomoon", sans-serif;*/
    /* Better Font Rendering =========== */
-   font-family: 'lora', sans-serif;
+  font-family: 'lora', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   scroll-behavior: smooth;
 }
+.icon {
+  margin : 10px;
+  color : #57d131;
+}
+
 .heading{
   font-weight: 100;
   font-size: 40px;
 }
+
 /* container style, cuz i don't want some of the content to span the full width
 of the browser */
+
 .container {
   width : 85%;
   margin : auto;
 }
+
 .highlight{
   color : #2c3e50;
   font-weight: 900;
 }
+
 .descriptionText, .col-date {
   line-height: 1.5em;
   color : #798a9a;
   font-size: 18px;
 }
+
 .clearFloats {
   clear: both;
 }
+
 /*for active links...*/
 .active {
   border-bottom: 2px solid #57d131;
@@ -75,12 +78,19 @@ ul {
   background-color: #57d131;
   padding : 2px;
 }
+.pageTop {
+  position: fixed;
+  bottom : 30px;
+  right : 30px;
+  color : #57d131;
+  font-size: 20px;
+  border-radius: 50%;
+  border : 1px solid #57d131;
+  padding : 10px;
+  cursor: pointer;
+  z-index: 100;
+}
 
-
-
-/* colors :
-highlight : #57d131,
-blunt text : #798a9a  */
 
 .openNav {
   font-size: 25px;
@@ -142,7 +152,7 @@ blunt text : #798a9a  */
 .navLinks li a {
   text-decoration: none;
   color : #fff;
-  font-size: 150%;
+  font-size: 130%;
 }
 .openNav, #closebtn{
   cursor: pointer;
@@ -200,11 +210,10 @@ blunt text : #798a9a  */
 
 /* About Me Section */
 .liner{
-  /* width : 50px;
-  border-bottom: 2px solid red; */
+  content: ""
+  width : 50px;
   color : #57d131;
-  border-bottom: 2px solid #57d131;
-
+  font-weight: 800;
 }
 .aboutMe{
   margin-top: 100px;
@@ -295,7 +304,7 @@ blunt text : #798a9a  */
 }
 /*lets create a general rule style for progress*/
 .mySkills progress {
-	height : 3px;
+	height : 5px;
 	background: #dfdfdf;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 	border-radius: 5px;
@@ -307,7 +316,7 @@ blunt text : #798a9a  */
 
 .mySkills progress::-webkit-progress-bar {
 	/*for Chrome and Safari*/
-	height : 3px;
+	height : 5px;
 	background: #dfdfdf;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
 	border-radius: 5px;
@@ -484,12 +493,15 @@ cares anyway*/
 
 /* My Resume section styles */
 
-.resume-right-left {
+.myResumeSectionHeader {
+  margin-left: 20px;
+}
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.resume-right-left a {
-  color : #333;
+.grid a {
+  color : #333 !important;
 }
 .resume-col-heading {
   margin-left : 15px;
@@ -543,7 +555,11 @@ cares anyway*/
   max-height: 200px !important;
   min-height: 200px !important;
 }
-
+.contactText {
+  color : grey;
+  line-height: 1em;
+  font-size: 18px;
+}
 
 /*Blog section*/
 .blogHeader {
@@ -785,7 +801,7 @@ on mobiles are a stinky-obnocious pain in the fucking balls ? :( */
 center .button {
   background-color: #333;
 }
-.resume-right-left {
+.grid {
   display: block;
 }
 
@@ -811,8 +827,7 @@ center .button {
   background-color: #57d131;
 }
 /*make the images a lil dark on mobiles, since we're not exactly
-doing the over thing (it's click in this case)
-INFACT God blessed me with common sense mehn!*/
+doing the over thing (it's click in this case)*/
 .cardImage {
   filter: brightness(40%);
 }
@@ -830,6 +845,13 @@ INFACT God blessed me with common sense mehn!*/
 
 .footerContentHolder {
   grid-template-columns: 2fr 2fr 1fr;
+}
+
+/* the page scroller */
+.pageTop {
+  bottom : 20px;
+  right : 20px;
+  font-size: 10px;
 }
 
 }/*First media end section*/
