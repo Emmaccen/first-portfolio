@@ -101,9 +101,8 @@ ul {
 }
 /* The Topmost Picture homepage background*/
 .homeBackground {
-  /*i might wanna set a fallback background-image
-  just in case some ass-hole decides to load my page with javaScript disabled*/
-  /*background-image: url("../images/1.jpg");*/
+  /*i might wanna set a fallback background-image*/
+  background-image: url("../images/1.jpg");
   transition: 1.5s;
   background-position: center center;
   background-repeat: no-repeat;
@@ -158,8 +157,6 @@ ul {
   cursor: pointer;
 }
 .navLinks li a:hover {
-  /* transition: border-bottom 0.5s; */
-  /* color : #57d131; */
   transition: 0.3s;
   border-bottom : 2px solid #57d131;
 }
@@ -233,7 +230,6 @@ ul {
   height: 100%;
   width: 100%;
   justify-content: center;
-  /*align-items: center;*/
   margin-left : 18px;
 }
 

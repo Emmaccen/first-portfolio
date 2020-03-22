@@ -12,8 +12,6 @@ absolute like the homePage*/
  	background-size: cover;
  	height: 400px;
  	width: 100%;
- 	/*can't use filter here.... like i said... its a background image....*/
- 	/*filter: brightness(70%);*/
 }
 
 .portfolioPageBg .portfolioTag {
@@ -91,8 +89,6 @@ color : white;
  align-items: center; /*top to buttom*/
  height: 100%;
  text-align: center;
- /*should have use width 100% all this while ...*/
- /*padding : 0px 10px 0px 100px;*/
  width: 100%;
 }
 .overlay {
