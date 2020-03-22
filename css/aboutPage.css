@@ -111,6 +111,9 @@ cool right? :) I know... am smart like that, haha :) evil laugh*/
 .aboutSectionProjects {
   display: block;
 }
+.aboutSectionProjects img  {
+  height: 400px;
+}
 /*Okay i guess we're done here*/
 
 }
