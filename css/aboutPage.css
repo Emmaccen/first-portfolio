@@ -16,23 +16,23 @@ stylesheet */
   height: 100%;
   width: 100%;
 }
-.floatLeft {
-  float: left;
+.topSection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
-.floatRight {
-  float : right;
-}
-.introText strong {
-  display: block;
+.topSection .aboutSocialLinks{
+  display: flex;
+  justify-content: flex-end;
 }
 .introText {
   position: static;
-  width: 65%;
-  font-size: 150%;
   text-align: left;
   word-wrap: break-word;
   padding-bottom: 5px;
   margin-left: 50px;
+}
+.introText h2 strong{
+  font-size: 40px;
 }
 .introText div{
   display: flex;
@@ -48,10 +48,10 @@ stylesheet */
 .mySkills  {
   margin : 0px;
   padding : 20px;
+  display: flex;
 }
 .skillRange {
-  width: 35%;
-  margin : auto;
+  width: 100%;
   padding : 10px;
 }
 
@@ -112,6 +112,19 @@ cool right? :) I know... am smart like that, haha :) evil laugh*/
 .aboutSectionProjects img  {
   height: 400px;
 }
+
+@media (max-width : 900px) {
+
+  .mySkills {
+    display: block;
+  }
+  .introText * {
+    font-size: 20px !important;
+  }
+
+}/*meida end mark*/
+
+
 /*Okay i guess we're done here*/
 
 }
