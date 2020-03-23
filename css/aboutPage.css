@@ -65,20 +65,18 @@ stylesheet */
   color : #333;
 }
 .bioSection img {
-  height: auto;
+  height: 530px;
   width: 100%;
+}
+.projects {
+  width: 95%;
+  margin : auto;
 }
 .aboutSectionProjects img {
   height: auto;
   width: 100%;
   border-radius: 5px;
-  height: 300px;
-}
-
-.aboutSectionProjects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  height: 650px;
 }
 
 

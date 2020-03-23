@@ -4,6 +4,11 @@
 since we're using a background image and not positioning it
 absolute like the homePage*/
 
+.container {
+	/* this will override the initial from style.css */
+	width: 95%;
+	margin: auto;
+}
 .portfolioPageBg {
 	position: relative;
  	background-image: url("../images/bg5.jpg");
@@ -52,7 +57,7 @@ absolute like the homePage*/
 }
 
 /*Emma....... this Portfolio page style is pretty self explanatory so
-skill the comments and style this shit !!! */
+skip the comments and style this shit !!! */
 
 
 .portfolioItemsWrapper {
@@ -127,14 +132,17 @@ color : white;
 	transition : 1s all ease;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1100px){
 
 .portfolioItemsWrapper {
 	grid-template-columns: 1fr;
 }
+.backgroundImage {
+	height: 600px;
+}
 
 .backgroundImage {
-	filter: brightness(60%);
+	filter: brightness(50%);
 	transition: 1s;
 }
 .cover .overlay{

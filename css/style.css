@@ -60,6 +60,9 @@ of the browser */
 .clearFloats {
   clear: both;
 }
+.rel {
+  position: relative;
+}
 
 /*for active links...*/
 .active {
@@ -102,7 +105,7 @@ ul {
 /* The Topmost Picture homepage background*/
 .homeBackground {
   /*i might wanna set a fallback background-image*/
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/bg2.jpg");
   transition: 1.5s;
   background-position: center center;
   background-repeat: no-repeat;
@@ -164,9 +167,8 @@ ul {
 /* Introductory Text Styles */
 .introText {
   position: absolute;
-  z-index: 1;
   width: 100%;
-  top : 250px;
+  top : 25%;
   color : white;
   font-size: 150%;
   text-align: center;
@@ -180,8 +182,11 @@ ul {
   align-items: center;
 }
 .introText strong {
-  font-weight: 800px;
+  font-weight: 400px;
   font-size: 70px;
+}
+.introText h2 {
+  margin-bottom: 10px;
 }
 .introText p {
   width: 60%;
@@ -206,12 +211,6 @@ ul {
 }
 
 /* About Me Section */
-.liner{
-  content: ""
-  width : 50px;
-  color : #57d131;
-  font-weight: 800;
-}
 .aboutMe{
   margin-top: 100px;
   display: grid;
@@ -236,9 +235,19 @@ ul {
 .aboutMeHeader h1, h2, h3, h4 {
   font-weight: 100;
 }
+.liner::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 2px;
+width: 50px;
+background: #57d131;
+z-index: 1;
+}
 .aboutMe .sideImg img{
   width: 100%;
-  height: auto;
+  height: 530px;
 }
 /*About me header buttons */
 .smallButton{
@@ -521,55 +530,65 @@ cares anyway*/
 /* Get in touch section */
 
 .formWrapper {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: 1.4fr 2fr;
-  color : white;
   padding : 40px;
-  /*margin-top: 100px;*/
+  grid-gap: 100px;
+  width: 85%;
+  margin : auto;
 }
-.formWrapper .left {
-  margin-right : 100px;
+.getInTouchList h3 a {
+  margin-left : 20px !important;
 }
-.messageForm {
-  margin-left: 10px;
+.getInTouchList li{
+  background-color: #333;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 10px;
 }
+.getInTouchList li h3 {
+  font-size: 20px;
+}
+
 .messageForm input[type="text"],.messageForm input[type="email"], .messageForm textarea{
   width : 80%;
   background: transparent;
   border : none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #57d131;
   margin-bottom: 25px;
   max-width : 100%;
   outline : none;
-  color :  white;
+  padding : 17px;
 }
 .messageForm textarea {
-  resize: none;
-  max-height: 200px !important;
-  min-height: 200px !important;
+  resize: vertical;
+  min-height: 180px !important;
 }
 .contactText {
-  color : grey;
-  line-height: 1em;
-  font-size: 18px;
+  color : #333;
+  line-height: 1.3em;
+  font-size: 20px;
 }
 
 /*Blog section*/
 .blogHeader {
   color : #333;
 }
+
 .blogSection {
   margin-top: 30px;
   padding : 10px;
   text-align: center;
 }
+
 .blogContentWrapper {
   display: flex;
   margin-bottom: 15px;
 }
+
 .blogContainer {
   margin-bottom: 70px;
 }
@@ -612,9 +631,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .Copyright {
   /*Copyright : a document granting exclusive right to publish and sell literary or musical or artistic work */
   padding : 50px;
+  font-size: 25px;
+  color : rgb(256,256,256,0.25);
 }
 .footerContentHolder {
   min-height: 400px;
@@ -639,11 +661,7 @@ footer {
 }
 .footerTexts {
   line-height: 1.5em;
-  color : white;
-  opacity: 0.25;
-}
-.linkTexts {
- color : rgb(256,256,256,0.25);
+  color : rgb(256,256,256,0.25);
 }
 .footerSocialLinks span{
   color : #57d131;
@@ -701,14 +719,14 @@ footer {
 /*wouldn't you agree that making sure your web page shows right
 on mobiles are a stinky-obnocious pain in the fucking balls ? :( */
 
-.introText {
-  width: 100%;
-  top : 190px;
-  font-size: 150%;
+.introText .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90%;
 }
 .introText strong {
-  font-weight: 800px;
-  font-size: 60px;
+  font-size: 40px;
 }
 .introText p {
   width: 80%;
@@ -736,6 +754,9 @@ on mobiles are a stinky-obnocious pain in the fucking balls ? :( */
 /*move the emmanuel text a little to the left on smaller screens*/
 .homeLink {
   margin-left: 30px;
+}
+.homeLink a h2 {
+  font-size: 18px;
 }
   .navContainer .sideNav{
   background-color: rgb(0,0,0,0.9);

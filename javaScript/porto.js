@@ -84,7 +84,9 @@ console.log(innerWidth);
           }
 
 window.onload = () => {
-    changeBackground();
+  /*wait a while before animating bg since we already set a fallback background-image
+  in the style.css file :)*/
+    setTimeout(changeBackground,3000);
 }
 
 
