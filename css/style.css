@@ -1,6 +1,8 @@
 /*Don't fucking inspect ma code :(  */
 
-
+* {
+  box-sizing: border-box;
+}
 /*font family*/
 @font-face{
   font-family: "BickhamScriptPro-Regular";
@@ -23,7 +25,6 @@ body {
    /* Better Font Rendering =========== */
   font-family: 'lora', sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   scroll-behavior: smooth;
@@ -95,6 +96,24 @@ ul {
   z-index: 100;
 }
 
+/*===========slide in cool animation===============*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0px);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/*=================================*/
+
 
 .openNav {
   font-size: 25px;
@@ -112,7 +131,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
-  min-width: 100%;
+  width: 100%;
   filter: brightness(50%);
 }
 /*Nav space */
@@ -451,6 +470,7 @@ cares anyway*/
 .cardLists{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
 }
 .cardItem{
   position: relative;
@@ -537,8 +557,6 @@ cares anyway*/
   grid-template-columns: 1.4fr 2fr;
   padding : 40px;
   grid-gap: 100px;
-  width: 85%;
-  margin : auto;
 }
 .getInTouchList h3 a {
   margin-left : 20px !important;
