@@ -27,6 +27,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
   scroll-behavior: smooth;
+  padding: 0px;
 }
 .icon {
   margin : 10px;
@@ -42,7 +43,7 @@ body {
 of the browser */
 
 .container {
-  width : 85%;
+  width : 90%;
   margin : auto;
 }
 
@@ -111,7 +112,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;
-  width: 100%;
+  min-width: 100%;
   filter: brightness(50%);
 }
 /*Nav space */
@@ -244,6 +245,8 @@ height: 2px;
 width: 50px;
 background: #57d131;
 z-index: 1;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 .aboutMe .sideImg img{
   width: 100%;
@@ -559,13 +562,12 @@ cares anyway*/
   border : none;
   border-bottom: 1px solid #57d131;
   margin-bottom: 25px;
-  max-width : 100%;
   outline : none;
   padding : 17px;
 }
 .messageForm textarea {
   resize: vertical;
-  min-height: 180px !important;
+  min-height: 180px;
 }
 .contactText {
   color : #333;
@@ -796,18 +798,79 @@ on mobiles are a stinky-obnocious pain in the fucking balls ? :( */
 
 @media (max-width: 900px){
 
-
 /*making the rest of the views responsive on mobiles and tablets*/
 /*this should be easy :)  */
+.homeBackground {
+  min-height: 500px;
+}
+.homeLink {
+  margin-left: 10px;
+}
+.homeLink a h2 {
+  padding: 5px;
+}
 
+.introText{
+  font-size: 16px;
+}
+.introText strong {
+  font-size: 25px;
+}
+.button {
+  padding : 10px 20px;
+  font-size: 15px;
+}
 
   .aboutMe {
   display: block;
 }
+.aboutMe{
+  margin-top: 50px;
+}
+.aboutMe .sideImg img{
+  height: 350px;
+}
+.descriptionText {
+  font-size: 16px;
+  margin: 5px;
+}
+.smallButton{
+  padding : 10px;
+}
+.smallButton2{
+  padding : 5px 10px;
+  font-size: 18px;
+}
+
 
 .mySkills {
   display: block;
 }
+
+.myResumeSectionHeader {
+  padding-top: 1px;
+}
+.aboutMeHeader {
+  font-size: 14px;
+}
+.heading {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.block {
+  display: block;
+}
+.col-content {
+  padding : 20px;
+}
+.col-content:nth-child(odd) {
+  border : 3px solid #57d131;
+  padding : 17px;
+}
+.col-content:hover {
+  padding : 17px;
+}
+
 .productLists {
   display: block;
 }
@@ -857,11 +920,32 @@ doing the over thing (it's click in this case)*/
   display: block;
 }
 .messageForm input[type="text"],.messageForm input[type="email"], .messageForm textarea{
-  width: 100%
+  width: 90%;
+  margin-bottom: 10px;
+}
+.messageForm textarea {
+  min-height: 120px;
+}
+.footerContentHolder {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px !important;
+  padding: 10px;
+}
+.footerContent {
+  padding : 10px;
 }
 
+.author {
+  width: 65%;
+}
+.Copyright {
+  /*Copyright : a document granting exclusive right to publish and sell literary or musical or artistic work */
+  padding : 20px;
+  font-size: 16px;
+}
 .footerContentHolder {
-  grid-template-columns: 2fr 2fr 1fr;
+  min-height: 550px;
 }
 
 /* the page scroller */
@@ -871,9 +955,39 @@ doing the over thing (it's click in this case)*/
   font-size: 10px;
 }
 
-}/*First media end section*/
+@media (max-width : 600px) {
+  .productDescription2 {
+    margin : 10px;
+  }
+  .blogContentHolder {
+    width: 100%;
+  }
+  .blogImage {
+    height: 250px;
+    width: 100%;
+  }
+  .blogImage img {
+    border-radius: 0%;
+}
+.getInTouchList li {
+  height: 40px;
+}
+.getInTouchList li h3 {
+  margin : 0px;
+  font-size: 16px;
+}
+.contactText {
+  font-size: 16px;
+}
 
-}/*Second media end section*/
+
+}
+
+}/*Second(Smaller) media end section*/
+
+
+
+}/*First(bigger) media end section*/
 
 
 
