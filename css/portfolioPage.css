@@ -38,7 +38,6 @@ absolute like the homePage*/
 
 .tabTitles div button {
 	font-size: 18px;
-	font-family: monospace;
 	outline: none;
 	border : none;
 	background: transparent;
@@ -83,7 +82,6 @@ skip the comments and style this shit !!! */
 
 
 .overlay {
-font-family: monospace;
 transition: 1s;
 position: absolute;
 color : white;
@@ -109,15 +107,16 @@ color : white;
 	filter: brightness(30%);
 	/* transition: 1s; */
 	transform: scale(1.1);
+
 }
-.animate {
-	animation: transform 1s;
+.anim {
+	/* animation: transform 1s; */
 	/*animation-iteration-count: infinite;
 	animation-direction: alternate;*/
 }
 @keyframes transform {
-	from {transform: scale(0.5);}
-	to {transform: scale(1);}
+	/* from {transform: scale(0.5);}
+	to {transform: scale(1);} */
 }
 
 .green {
@@ -150,6 +149,27 @@ color : white;
 }
 .green {
 	color : #fff;
+}
+@media (max-width : 600px) {
+
+.portfolioPageBg {
+	height: 320px;
+}
+	.portfolioPageBg .portfolioTag {
+		left : 20px;
+		font-size: 17px;
+	}
+	.tabTitles div button {
+		font-size: 17px;
+		margin: 4px;
+	}
+		.backgroundImage {
+			height: 300px;
+		}
+		.overlay h1 {
+			margin : 0px;
+			font-size: 19px;
+		}
 }
 
 

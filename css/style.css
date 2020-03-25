@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /*font family*/
-@font-face{
+/* @font-face{
   font-family: "BickhamScriptPro-Regular";
   src: url("../fonts/BickhamScriptPro-Regular.woff") format("woff"),
   url("../fonts/BickhamScriptPro-Regular.woff2") format("woff2");
@@ -17,13 +17,18 @@
     url('fonts/icomoon.ttf?1z9v6x') format('truetype'),
     url('fonts/icomoon.woff?1z9v6x') format('woff'),
     url('fonts/icomoon.svg?1z9v6x#icomoon') format('svg');
-}
+} */
 
 /* Global Styles */
 body {
   /*font-family: "montserat" "icomoon", sans-serif;*/
    /* Better Font Rendering =========== */
-  font-family: 'lora', sans-serif;
+
+   /*I love all this fonts, it was hard to choose lol! :) */
+
+  /* font-family: 'lora', sans-serif; */
+  /* font-family: 'Baloo Da 2'; */
+  font-family: 'Gotu';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0px;
@@ -711,8 +716,8 @@ footer {
 .aboutSocialLinks a {
   color : #57d131;
   border : 1px solid #666;
-  padding: 13px;
-  border-radius: 50%;
+  padding: 5px;
+  border-radius: 20%;
 }
 .connect a{
     color : #57d131;
