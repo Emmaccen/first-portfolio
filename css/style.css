@@ -99,10 +99,10 @@ ul {
 /*===========slide in cool animation===============*/
 .come-in {
   transform: translateY(150px);
-  animation: come-in 1s ease forwards;
+  animation: come-in 1.3s ease forwards;
 }
 .come-in:nth-child(odd) {
-  animation-duration: 0.6s;
+  animation-duration: 0.8s;
 }
 .already-visible {
   transform: translateY(0px);

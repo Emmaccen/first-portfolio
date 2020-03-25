@@ -140,16 +140,22 @@ allMods.each(function(i, el) {
     el.addClass("already-visible");
   }
 });
-
+var determinant = 0;
 win.scroll(function(event) {
+  let latestValue = window.pageYOffset;
+  if(latestValue < determinant){
+    // console.log('scrolling up');
+  }else {
+    // we're scrolling down
+    allMods.each(function(i, el) {
+      var el = $(el);
+      if (el.visible(true)) {
+        el.addClass("come-in");
+      }
+    });
 
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-  });
-
+  }
+determinant = window.pageYOffset;
 });
 
 /*========================================================*/

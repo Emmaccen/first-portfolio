@@ -29,10 +29,8 @@ stylesheet */
   text-align: left;
   word-wrap: break-word;
   padding-bottom: 5px;
-  margin-left: 50px;
-}
-.introText h2 strong{
-  font-size: 40px;
+  margin: auto auto 50px auto;
+  width: 90%;
 }
 .introText div{
   display: flex;
@@ -68,9 +66,13 @@ stylesheet */
   height: 530px;
   width: 100%;
 }
+.aboutMeHeader h1 {
+  padding-top: 20px;
+}
 .projects {
   width: 95%;
   margin : auto;
+  margin-bottom: 40px;
 }
 .aboutSectionProjects img {
   height: auto;
@@ -122,7 +124,48 @@ cool right? :) I know... am smart like that, haha :) evil laugh*/
     font-size: 20px !important;
   }
 
-}/*meida end mark*/
+  @media (max-width : 600px){
+
+    .topSection{
+      display: block;
+    }
+    .topSection .aboutSocialLinks{
+      display: block;
+    }
+    .introText {
+      margin: auto;
+      width: 100%;
+    }
+    .introText div *{
+      width: 85%;
+      margin : auto;
+      text-align: center;
+    }
+
+.bioSection {
+  margin-top: 30px;
+}
+.bioSection img {
+  height: 400px;
+}
+
+    .aboutSocialLinks {
+      width: 85%;
+      margin : auto;
+      text-align: center;
+    }
+    .aboutSocialLinks ul li {
+      display: inline;
+      margin: 3px;
+      padding: 5px;
+    }
+    .aboutSocialLinks ul li a {
+      padding : 10px;
+    }
+
+  }/*media end mark (smaller)*/
+
+}/*media end mark(bigger)*/
 
 
 /*Okay i guess we're done here*/
