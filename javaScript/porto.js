@@ -98,7 +98,7 @@ function scrollToView(element){
   console.log(document.getElementById(element));
 }
 
-/*Cool slid in animation code copied from CSS-TRICKS*/
+/*Cool slide in animation code*/
 
 (function($) {
 

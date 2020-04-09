@@ -103,7 +103,7 @@ ul {
 
 /*===========slide in cool animation===============*/
 .come-in {
-  transform: translateY(150px);
+  transform: translateY(200px);
   animation: come-in 1.3s ease forwards;
 }
 .come-in:nth-child(odd) {
