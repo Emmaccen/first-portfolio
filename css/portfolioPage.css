@@ -9,6 +9,7 @@ absolute like the homePage*/
 	width: 95%;
 	margin: auto;
 }
+
 .portfolioPageBg {
 	position: relative;
  	background-image: url("../images/bg5.jpg");
@@ -18,6 +19,23 @@ absolute like the homePage*/
  	height: 400px;
  	width: 100%;
 }
+
+/* override the top nav style from parent stylesheet */
+
+.homeLink {
+	margin-left: 40px;
+  }
+  .homeLink a h2 {
+	/* The Topmost name text (Emmanuel) */
+	padding: 8px;
+	font-size: 20px;
+  }
+  .navLinks li a {
+	font-size: 100%;
+  }
+
+
+  /* about page continuation styles */
 
 .portfolioPageBg .portfolioTag {
 	position: absolute;
