@@ -45,6 +45,26 @@ body {
   font-size: 40px;
 }
 
+/* message popup style */
+.contactPopupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top : 0;
+  text-align: center;
+  background-color: #333;
+  width: 100%;
+  z-index: 20;
+  transition: .5s all ease;
+  height: 0;
+}
+.contactPopupContainer p {
+  color : whitesmoke;
+  font-size: 20px;
+  margin : 0;
+}
+
 /* container style, cuz i don't want some of the content to span the full width
 of the browser */
 

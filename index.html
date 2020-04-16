@@ -654,20 +654,20 @@
       </div>
     </div>
 
-    <form class="animate messageForm" action="mailto:oriolaemmanuel199@gmail.com" method="post">
+    <form class="animate messageForm"  onsubmit="sendMessage()">
       <div class="nameAndEmailForm">
         <div>
           <h1>Write Me</h1>
         </div>
-        <div><input required type="text" name="name" placeholder="Your Name"></div>
-        <div><input required type="email" name="mail" placeholder="Your E-Mail"></div>
+        <div><input id="formName" required type="text" name="name" placeholder="Your Name"></div>
+        <div><input id="formEmail" required type="email" name="mail" placeholder="Your E-Mail"></div>
       </div>
       <div class="message-subject-form">
         <div>
-          <input required type="text" name="subject" value="" placeholder="Subject">
+          <input id="formSubject" required type="text" name="subject" value="" placeholder="Subject">
         </div>
         <div>
-          <textarea required name="message" rows="8" cols="80" placeholder="Your Message..."></textarea>
+          <textarea id="formMessage" required name="message" rows="8" cols="80" placeholder="Your Message..."></textarea>
         </div>
         <div>
           <button class="button" type="submit">SEND</button>
@@ -776,6 +776,12 @@
         <div>
           <span onclick="scrollToView('scrolltoHome')" class="icon-arrow-up2 pageTop"></span>
         </div>
+        
+        <div class="contactPopupContainer">
+          <!-- to display the contact feedback message -->
+          <p class="contactPopupMessage"></p>
+          
+        </div>
 
 <!-- HIT ME UP ON IG : @caveOfProgramming.
 if i haven't already changed the name to CodePlanet
@@ -784,11 +790,14 @@ if i haven't already changed the name to CodePlanet
 <!-- javaScrip code below -->
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -799,17 +808,20 @@ if i haven't already changed the name to CodePlanet
     projectId: "portfolio-5398f",
     storageBucket: "portfolio-5398f.appspot.com",
     messagingSenderId: "687254159962",
-    appId: "1:687254159962:web:3d4697b36cd1e9ba590e63",
-    measurementId: "G-KKFHFBK25X"
+    appId: "1:687254159962:web:9dc99a102d94aef6590e63",
+    measurementId: "G-KSF98QQQR3"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
 
+
+
         <script src="./javaScript/jquery.min.js" charset="utf-8"></script>
         <script src="./javaScript/jquery-3.2.1.min.js" charset="utf-8"></script>
         <script src="./javaScript/porto.js" charset="utf-8"></script>
+        <script src="./javaScript/networking.js"></script>
 
         <!-- Do you ever think javaScript if one of the most powerful pro-lang in the world and still Fucking Hate it ?
         YEAH !!! ......  i've seen that face before :(      -->
