@@ -91,6 +91,15 @@ of the browser */
   position: relative;
 }
 
+.big {
+  font-size: larger;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*for active links...*/
 .active {
   border-bottom: 2px solid #57d131;
