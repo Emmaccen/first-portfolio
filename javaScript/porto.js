@@ -98,6 +98,10 @@ function scrollToView(element){
   console.log(document.getElementById(element));
 }
 
+function openCv() {
+  window.open('./files/CV.pdf')
+}
+
 /*Cool slide in animation code*/
 
 (function($) {
