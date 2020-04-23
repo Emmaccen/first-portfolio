@@ -1008,7 +1008,7 @@ doing the over thing (it's click in this case)*/
 }
 
 @media (max-width : 600px) {
-  .productDescription2 {
+  .productDescription2 , .productDescription {
     margin : 10px;
   }
   .blogContentHolder {
