@@ -47,7 +47,7 @@ absolute like the homePage*/
 
 .portfolioTag a:hover {
   transition: 0.3s;
-  border-bottom : 2px solid #57d131;
+  border-bottom : 2px solid var(--iconColor);
 }
 .tabTitles {
 	margin-top: 60px;
@@ -63,14 +63,14 @@ absolute like the homePage*/
 	cursor: pointer;
 }
 .currentTab {
-	border-bottom: 2px solid #57d131 !important;
+	border-bottom: 2px solid var(--iconColor) !important;
 }
 .tabTitles div{
 	text-align: center;
 }
 .tabTitles button:hover {
 	transition: 0.2s;
- border-bottom: 2px solid #57d131 !important;
+ border-bottom: 2px solid var(--iconColor) !important;
 }
 
 /*Emma....... this Portfolio page style is pretty self explanatory so
@@ -138,7 +138,7 @@ color : white;
 }
 
 .green {
-	color : #57d131;
+	color : var(--iconColor);
 }
 
 .topHeader a {
